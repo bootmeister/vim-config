@@ -41,7 +41,7 @@ Plugin 'jnurmine/Zenburn'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 " All of your Plugins must be added before the following line
@@ -71,9 +71,13 @@ autocmd vimenter * NERDTree
 " System clipboard
 set clipboard=unnamed
 
+" Necesarry for color stuff
+let g:solarized_termcolor=256
+
 " Make Python pretty
 let python_highlight_all=1
 syntax on
+
 " Prettier
 if has('gui_running')
 	set background=dark
