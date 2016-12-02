@@ -63,8 +63,6 @@ filetype plugin indent on    " required
 " Enable line numbering
 set nu
 
-" Hide .pyc files from nerd-tree
-let NERDTreeIgnore=['\.pyc$', '\~$']
 " Auto-start nerd-tree
 autocmd vimenter * NERDTree
 
